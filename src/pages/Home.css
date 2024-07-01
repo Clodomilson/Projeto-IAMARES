@@ -1,0 +1,43 @@
+/* src/pages/Home.css */
+.home {
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+  }
+  
+  .home p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .donate-button {
+    background-color: #ffae00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .donate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .fundo-transparente {
+    background-color: #42424280;
+    padding: 1rem;
+    border-radius: 10px;
+  }

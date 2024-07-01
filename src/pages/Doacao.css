@@ -1,0 +1,27 @@
+/* src/pages/Doacao.css */
+.doacao {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .donation-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .qrcode-container,
+  .credit-card-donation {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .qrcode {
+    max-width: 200px;
+  }
+  
+  .credit-card-donation h2 {
+    margin-bottom: 15px;
+  }
+  
