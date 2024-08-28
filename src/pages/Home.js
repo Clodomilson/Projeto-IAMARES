@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home text-center">
       <div class="fundo-transparente">
-      <h1>Bem-vindo à ONG</h1>
+      <h1>Bem-vindo à Iamares</h1>
       <p>Transformando vidas através da solidariedade.</p>
       <Link to="/doacao" className="btn btn-primary">Doe Agora</Link>
       </div>

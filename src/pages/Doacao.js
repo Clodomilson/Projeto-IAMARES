@@ -1,14 +1,15 @@
 // src/pages/Doacao.js
 import React from 'react';
-import { loadStripe } from '@stripe/stripe-js';
-import { Elements } from '@stripe/react-stripe-js';
 import qrcode from '../assets/images/qrcode.png';
 import './Doacao.css';
-import CheckoutForm from '../components/CheckoutForm';
-
-const stripePromise = loadStripe('SUA_CHAVE_PUBLICA_STRIPE'); // Substitua pela sua chave pública do Stripe
 
 const Doacao = () => {
+  const handleDonateClick = () => {
+    // Substituir este link pelo seu link de pagamento da Cielo
+    const linkDePagamento = 'https://sualojacielo.com.br/superlink?id=123456';
+    window.location.href = linkDePagamento;
+  };
+
   return (
     <div className="doacao container">
       <h1 className="text-center">Faça uma Doação</h1>
@@ -22,10 +23,10 @@ const Doacao = () => {
         </div>
         <div className="col-md-6 text-center">
           <div className="credit-card-donation">
-            <h2>Doe com Cartão de Crédito</h2>
-            <Elements stripe={stripePromise}>
-              <CheckoutForm />
-            </Elements>
+            <h2>Doe com Link de Pagamento</h2>
+            <button onClick={handleDonateClick} className="btn btn-primary">
+              Fazer Doação
+            </button>
           </div>
         </div>
       </div>
