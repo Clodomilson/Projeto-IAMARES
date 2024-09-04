@@ -7,3 +7,17 @@
 img{
     height: 350px;
 }
+
+.about-title{
+    padding:  20px 0;
+    text-align: center;
+}
+
+.about-text{
+    margin: 0 40px;
+    padding-bottom: 40px;
+}
+
+p{
+    font-size: 20px;
+}
