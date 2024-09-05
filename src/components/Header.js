@@ -8,7 +8,8 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="logo">
-        <img src={logo_removebg} alt="Logo da ONG" />  {/* Uso da imagem importada */}
+        <Link to="/"><img src={logo_removebg} alt="Logo da ONG" />  {/* Uso da imagem importada */}</Link>
+        
       </div>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
