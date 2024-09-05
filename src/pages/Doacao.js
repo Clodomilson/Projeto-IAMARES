@@ -4,10 +4,19 @@ import qrcode from '../assets/images/qrcode.png';
 import './Doacao.css';
 
 const Doacao = () => {
-  const handleDonateClick = () => {
-    // Substituir este link pelo seu link de pagamento da Cielo
-    const linkDePagamento = 'https://sualojacielo.com.br/superlink?id=123456';
-    window.location.href = linkDePagamento;
+  const handleDonateClick = async () => {
+    try {
+      // Faz uma chamada para o backend para obter o link de pagamento
+      const response = await fetch('/api/getPaymentLink');
+      if (!response.ok) {
+        throw new Error('Erro ao obter o link de pagamento.');
+      }
+      const data = await response.json();
+      window.location.href = data.link; // Redireciona para o link seguro
+    } catch (error) {
+      console.error('Erro:', error);
+      alert('Houve um problema ao processar sua doação. Tente novamente mais tarde.');
+    }
   };
 
   return (
