@@ -5,11 +5,11 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home text-center">
+    <div className="home">
       <div class="fundo-transparente">
-      <h1>Bem-vindo à Iamares</h1>
-      <p>Transformando vidas através da solidariedade.</p>
-      <Link to="/doacao" className="btn btn-primary">Doe Agora</Link>
+        <h1>Bem-vindo à Iamares</h1>
+        <p>Transformando vidas através da solidariedade.</p>
+        <Link to="/doacao" className="btn btn-primary">Doe Agora</Link>
       </div>
     </div>
   );
