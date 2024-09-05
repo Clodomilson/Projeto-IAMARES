@@ -1,6 +1,7 @@
 // src/pages/Sobre.js
 import React from 'react';
 import logo_removebg from '../assets/images/logo_removebg.png';  // Import
+import areas_atuacao from '../assets/images/areas_atuacao.png';
 import './Sobre.css'
 
 const Sobre = () => {
@@ -9,14 +10,30 @@ const Sobre = () => {
       <div className='logo-removebg'>
         <img src={logo_removebg} alt="Logo da ONG" />  {/* Uso da imagem importada */}
       </div>
-      <div className='about-title'>
-        <h1>Sobre o projeto</h1>
+      <div className='slogan-project'>
+        <h2>Desenvolvendo Educação, Saúde, Esporte, Capacitação Profissional, Ressocialização e sustentabilidade</h2>
       </div>
       <div className='about-text'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus a fringilla convallis. Quisque vehicula scelerisque erat, ac condimentum nulla placerat sit amet. Mauris orci est, tristique in feugiat quis, laoreet at augue. Fusce risus magna, porttitor eu eros quis, eleifend mattis risus. Aliquam imperdiet metus a metus iaculis, ut egestas nibh vulputate. Phasellus in eleifend sapien, et laoreet nunc. Integer vulputate enim ut nisi hendrerit, eu placerat velit viverra. Aenean nec scelerisque est. Aliquam tincidunt mollis lorem vitae pellentesque. Duis id arcu dapibus, consequat purus ac, consequat libero. Aliquam varius nisi in justo semper maximus. Vivamus tincidunt urna sit amet magna feugiat, sed tempus enim euismod.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus a fringilla convallis. Quisque vehicula scelerisque erat, ac condimentum nulla placerat sit amet. Mauris orci est, tristique in feugiat quis, laoreet at augue. Fusce risus magna, porttitor eu eros quis, eleifend mattis risus. Aliquam imperdiet metus a metus iaculis, ut egestas nibh vulputate. Phasellus in eleifend sapien, et laoreet nunc. Integer vulputate enim ut nisi hendrerit, eu placerat velit viverra. Aenean nec scelerisque est. Aliquam tincidunt mollis lorem vitae pellentesque. Duis id arcu dapibus, consequat purus ac, consequat libero. Aliquam varius nisi in justo semper maximus. Vivamus tincidunt urna sit amet magna feugiat, sed tempus enim euismod.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus a fringilla convallis. Quisque vehicula scelerisque erat, ac condimentum nulla placerat sit amet. Mauris orci est, tristique in feugiat quis, laoreet at augue. Fusce risus magna, porttitor eu eros quis, eleifend mattis risus. Aliquam imperdiet metus a metus iaculis, ut egestas nibh vulputate. Phasellus in eleifend sapien, et laoreet nunc. Integer vulputate enim ut nisi hendrerit, eu placerat velit viverra. Aenean nec scelerisque est. Aliquam tincidunt mollis lorem vitae pellentesque. Duis id arcu dapibus, consequat purus ac, consequat libero. Aliquam varius nisi in justo semper maximus. Vivamus tincidunt urna sit amet magna feugiat, sed tempus enim euismod.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus a fringilla convallis. Quisque vehicula scelerisque erat, ac condimentum nulla placerat sit amet. Mauris orci est, tristique in feugiat quis, laoreet at augue. Fusce risus magna, porttitor eu eros quis, eleifend mattis risus. Aliquam imperdiet metus a metus iaculis, ut egestas nibh vulputate. Phasellus in eleifend sapien, et laoreet nunc. Integer vulputate enim ut nisi hendrerit, eu placerat velit viverra. Aenean nec scelerisque est. Aliquam tincidunt mollis lorem vitae pellentesque. Duis id arcu dapibus, consequat purus ac, consequat libero. Aliquam varius nisi in justo semper maximus. Vivamus tincidunt urna sit amet magna feugiat, sed tempus enim euismod.</p>
+        <h1>Quem somos</h1>
+        <p>O Instituto IAMARES é uma associação civil beneficente com sede na cidade de São Luís - Maranhão tendo como alvo promover ações que visem o bem estar e desenvolvimento social da comunidade, devolvendo dignidade e cidadania aos filhos de nosso país.</p>
+        <h1>Missão</h1>
+        <p>Nossa missão é criar um mundo mais justo, onde todos tenham acesso a oportunidades, direitos e qualidade e  ida.<br /> Trabalhamos incansavelmente para promover mudanças positivas, mobilizando recursos e desenvolvendo  projetos e programas que impactem de forma significativa a sociedade.</p>
+        <h1>Visão</h1>
+        <p>Nossa visão é um futuro onde cada indivíduo possa alcançar seu pleno potencial e viver em uma sociedade  mais justa e equitativa.</p>
+        <h1>Valores</h1>
+        <ol>
+          <li>Empatia</li>
+          <li>Igualdade</li>
+          <li>Justiça social</li>
+          <li>Responsabilidade</li>
+          <li>Colaboração</li>
+          <li>Inovação</li>
+          <li>Sustentabilidade</li>
+        </ol>
+        <h1>Áreas de atuação</h1>
+        <div className='areas-atuacao'>
+          <img src={areas_atuacao} alt="Áreas de atuação" />
+        </div>
       </div>
     </div>
   );
